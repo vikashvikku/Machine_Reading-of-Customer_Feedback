@@ -1,4 +1,4 @@
-torch==2.6.0 # (or the latest stable version)
+torch
 torchvision
 torchaudio
 transformers
