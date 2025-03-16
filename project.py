@@ -8,6 +8,13 @@ import seaborn as sns
 from transformers import pipeline
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 from io import BytesIO
+import subprocess
+
+try:
+    import torch
+except ModuleNotFoundError:
+    subprocess.run(["pip", "install", "torch", "--no-cache-dir"])
+    import torch
 
 # 🔹 Detect Fastest Device
 device = "cuda" if torch.cuda.is_available() else "cpu"
