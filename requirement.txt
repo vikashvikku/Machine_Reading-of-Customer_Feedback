@@ -1,0 +1,8 @@
+torch==2.6.0 # (or the latest stable version)
+torchvision
+torchaudio
+transformers
+streamlit
+pandas
+matplotlib
+seaborn
